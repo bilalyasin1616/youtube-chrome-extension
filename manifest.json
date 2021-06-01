@@ -1,0 +1,32 @@
+  {
+    "name": "Youtube Subscriber",
+    "version": "1.0",
+    "description": "Gives you Youtube Subscribers!",
+    "manifest_version": 2,
+    "content_scripts": [
+      {
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["js/jquery.min.js", "subscribers.js"]
+      }
+    ],
+    "permissions": [
+      "activeTab", "storage"
+    ],
+  	"options_page": "options.html",
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/get_started16.png",
+        "32": "images/get_started32.png",
+        "48": "images/get_started48.png",
+        "128": "images/get_started128.png"
+      }
+    },
+    "icons": {
+      "16": "images/get_started16.png",
+      "32": "images/get_started32.png",
+      "48": "images/get_started48.png",
+      "128": "images/get_started128.png"
+    }
+
+  }
